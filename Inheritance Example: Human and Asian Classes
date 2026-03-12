@@ -1,0 +1,36 @@
+class Human:
+    def __init__(self, name, age, country):
+        self.name = name
+        self.age = age
+        self.country = country
+
+    def speak(self):
+        return "Human can speak"
+
+    def eat(self):
+        return "Human is eating food"
+
+
+class Asian(Human):
+    def __init__(self, name, age, country, language, hobby):
+        super().__init__(name, age, country)
+        self.language = language
+        self.hobby = hobby
+
+    def eat(self):
+        return "Asian is eating rice"
+
+    def speak(self):
+        return "I am Asian and I can speak multiple languages"
+
+    def culture(self):
+        return "Asian cultures are very diverse"
+
+
+baran = Human("baran", 20, "Turkey")
+mustafa = Asian("mustafa", 19, "Japan", "Japanese", "Anime")
+mehmet = Asian("mehmet", 21, "Korea", "Korean", "Taekwondo")
+
+print(baran.eat())
+print(mustafa.speak())
+print(mehmet.culture())
