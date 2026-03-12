@@ -34,3 +34,4 @@ mehmet = Asian("mehmet", 21, "Korea", "Korean", "Taekwondo")
 print(baran.eat())
 print(mustafa.speak())
 print(mehmet.culture())
+
